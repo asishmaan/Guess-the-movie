@@ -1,0 +1,187 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f4f4f9;
+}
+
+header {
+    background: #282c34;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.game-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.movie-poster img:hover {
+    transform: scale(1.05);
+}
+
+.guess-section {
+    margin-bottom: 20px;
+}
+
+#guessInput {
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+#guessInput:focus {
+    border-color: #007bff;
+}
+
+#guessButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#guessButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#result {
+    font-size: 1.2em;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.hint-section {
+    margin-bottom: 20px;
+}
+
+#hintButton {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#hintButton:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+#hint {
+    font-size: 1.2em;
+    color: #6c757d;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.score-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#score {
+    font-size: 1.2em;
+}
+
+#nextButton {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#nextButton:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.end-section {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#finalScore {
+    font-size: 1.5em;
+    color: #333;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#restartButton:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #282c34;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
